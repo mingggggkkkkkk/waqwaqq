@@ -1,0 +1,25 @@
+
+        *{
+            cursor: none;
+            margin: 0;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .pointer{
+            width: 65px;
+            height: 61px;
+            background: url('../image/ch_1.png');
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999999;
+            pointer-events: none;
+        }
+
+        .pointer.click{
+            background: url('../image/ch_hover.png')!important;
+        }
+    

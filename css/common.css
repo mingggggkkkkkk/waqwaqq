@@ -1,0 +1,37 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GS';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 
+코드순서
+넓이, 높이
+정렬
+꾸밈요소 
+*/
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, a, ul, li, nav, dl, dt, dd, small, input, div{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "GS";
+}
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.hideText{
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+address { font-style: normal; }

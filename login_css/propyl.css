@@ -1,0 +1,672 @@
+@import url(../css/common.css);
+
+/* css에서 나타남 */
+#header .cssHeader {
+    display: none;
+}
+#header #mobileHeader a {
+    display: none;
+}
+
+#header{
+    width: calc(100vw * (500 / 1920));
+    height: 100vh;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-right: 2px solid #E7E7E7;
+    padding-top: calc(100vw * (50 / 1920));
+}
+#header h1{
+    width: calc(100vw * (280 / 1920));
+    height: calc(100vw * (36 / 1920));
+
+    margin-bottom: calc(100vw * (70 / 1920));
+    background-image: url(../image/main/logo_black.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: calc(100vw * (150 / 1920)) calc(100vw * (36 / 1920));
+}
+#sideNav{
+    width: calc(100vw * (280 / 1920));
+    
+}
+#sideNav ul li:nth-of-type(1){
+    text-transform: uppercase;
+    font-size: calc(100vw * (25 / 1920));
+    margin-bottom: calc(100vw * (40 / 1920));
+}
+#sideNav ul li:not(:nth-of-type(1)){
+    font-size: calc(100vw * (20 / 1920));
+    margin-bottom: calc(100vw * (25 / 1920));
+    padding-left: calc(100vw * (60 / 1920));
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* 아이콘black으로 구하면 삭제 */
+    filter: invert();
+    background-color: black;
+    /* 아이콘black으로 구하면 삭제 */
+}
+#sideNav ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* 아이콘black으로 구하면 삭제 */
+    color: white;
+    /* 아이콘black으로 구하면 삭제 */
+}
+#sideNav ul li:nth-of-type(2){
+    background-image: url(../image/main/home.png);
+}
+#sideNav ul li:nth-of-type(3){
+     background-image: url(../image/sub_aside/User.png);
+ }
+ #sideNav ul li:nth-of-type(4){
+     background-image: url(../image/main/Bookmark.png);
+ }
+ #sideNav ul li:nth-of-type(5){
+     background-image: url(../image/main/Heart.png);
+ }
+ #sideNav ul li:nth-of-type(6){
+     background-image: url(../image/main/location.png);
+ }
+/* main start */
+main{
+    width: calc(100vw * (1400 / 1920));
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    margin-left: calc(100vw * (500 / 1920));
+    padding-top: calc(100vw * (160 / 1920));
+}
+#proEdit{
+    width: calc(100vw * (655 / 1920));
+}
+#proEditWrap{
+    display: flex;
+    flex-direction: column;
+}
+/* 상단헤더 */
+#proEditWrap > li:nth-of-type(1){
+    font-size: calc(100vw * (25 / 1920));
+    margin-bottom: calc(100vw * (50 / 1920));
+}
+/* 프로필 */
+#proEditWrap > li:nth-of-type(2){
+    width: calc(100vw * (655 / 1920));
+    height: calc(100vw * (114 / 1920));
+    font-size: calc(100vw * (25 / 1920));
+    margin-bottom: calc(100vw * (40 / 1920));
+}
+#proEditWrap li:nth-of-type(2) dl{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #E7E7E7;
+    border-radius: calc(100vw * (20 / 1920));
+}
+#proEditWrap li:nth-of-type(2) dl dt{
+    width: calc(100vw * (80 / 1920));
+    height: calc(100vw * (80 / 1920));
+    border-radius: calc(100vw * (80 / 1920));
+
+    background-image: url(../image/main/profile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(1){
+    width: calc(100vw * (345 / 1920));
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(1) p:nth-of-type(1){
+    font-size: calc(100vw * (20 / 1920));
+    font-weight: bold;
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(1) p:nth-of-type(2){
+    font-size: calc(100vw * (12 / 1920));
+    font-weight: 500;
+    color: #83888D;
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(2){
+    width: calc(100vw * (100 / 1920));
+    height: calc(100vw * (40 / 1920));
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(2) a{
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    line-height: calc(100vw * (40 / 1920));
+    text-align: center;
+
+    font-size: calc(100vw * (12 / 1920));
+    color: white;
+    font-weight: bold;
+    background-color: #FF005C;
+    border-radius: calc(100vw * (5 / 1920));
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(3){
+    width: calc(100vw * (22 / 1920));
+    height: calc(100vw * (22 / 1920));
+}
+#proEditWrap li:nth-of-type(2) dl dd:nth-of-type(3) a{
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    background-image: url(../image/sub_aside/setting.png);        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+/* 성별 */
+#proEditWrap li:nth-of-type(3){
+    width: calc(100vw * (655 / 1920));
+    margin-bottom: calc(100vw * (30 / 1920));
+}
+#proEditWrap li:nth-of-type(3) form{
+    display: flex;
+    flex-direction: column;
+}
+#proEditWrap li:nth-of-type(3) label{
+    font-size: calc(100vw * (18 / 1920));
+    margin-bottom: calc(100vw * (10 / 1920));
+}
+#gender{
+    font-size: calc(100vw * (18 / 1920));
+}
+#proEditWrap li:nth-of-type(3) form select{
+    appearance: none;
+    width: calc(100vw * (655 / 1920));
+    height: calc(100vw * (50 / 1920));
+    padding-left: calc(100vw * (35 / 1920));
+    border: 1px solid #C8C8C8;
+    border-radius: calc(100vw * (10 / 1920));
+    font-size: calc(100vw * (18 / 1920));
+    color: #83888D;
+    background-image: url(../image/underArrow.png);
+    background-repeat: no-repeat;
+    background-position: right calc(100vw * (35 / 1920)) center;
+}
+#proEditWrap li:nth-of-type(3) form select option{
+    font-size: calc(100vw * (18 / 1920));
+}
+#proEditWrap li:nth-of-type(3) form select:focus{
+    outline: none;
+}
+/* 지역 */
+#proEditWrap li:nth-of-type(4){
+    width: calc(100vw * (655 / 1920));
+    margin-bottom: calc(100vw * (30 / 1920));
+}
+#proEditWrap li:nth-of-type(4) form{
+    display: flex;
+    flex-direction: column;
+}
+#proEditWrap li:nth-of-type(4) label{
+    font-size: calc(100vw * (18 / 1920));
+    margin-bottom: calc(100vw * (10 / 1920));
+}
+#local{
+    font-size: calc(100vw * (18 / 1920));
+}
+#proEditWrap li:nth-of-type(4) form select{
+    appearance: none;
+    width: calc(100vw * (655 / 1920));
+    height: calc(100vw * (50 / 1920));
+    padding-left: calc(100vw * (35 / 1920));
+    border: 1px solid #C8C8C8;
+    border-radius: calc(100vw * (10 / 1920));
+    font-size: calc(100vw * (18 / 1920));
+    color: #83888D;
+    background-image: url(../image/underArrow.png);
+    background-repeat: no-repeat;
+    background-position: right calc(100vw * (35 / 1920)) center;
+}
+#proEditWrap li:nth-of-type(4) form select option{
+    font-size: calc(100vw * (18 / 1920));
+}
+#proEditWrap li:nth-of-type(4) form select:focus{
+    outline: none;
+}
+/* 추천표시 */
+#proEditWrap > li:nth-of-type(5){
+    font-size: calc(100vw * (18 / 1920));
+    margin-bottom: calc(100vw * (20 / 1920));
+}
+#proEditWrap li:nth-of-type(5) > p{
+    font-size: calc(100vw * (18 / 1920));
+    margin-bottom: calc(100vw * (10 / 1920));
+}
+#proEditWrap li:nth-of-type(5) ul{
+    width: calc(100vw * (655 / 1920));
+    height: calc(100vw * (93 / 1920));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc(100vw * (35 / 1920));
+    border-radius: calc(100vw * (10 / 1920));
+    border: 1px solid #C8C8C8;
+}
+#proEditWrap li:nth-of-type(5) ul li:nth-of-type(1){
+    width: calc(100vw * (370 / 1920));
+    height: fit-content
+}
+#proEditWrap li:nth-of-type(5) ul > li p:nth-of-type(1){
+    font-size: calc(100vw * (15 / 1920));
+}
+#proEditWrap li:nth-of-type(5) ul > li p:nth-of-type(2){
+    font-size: calc(100vw * (12 / 1920));
+    color: #83888D;
+}
+/* 스위치 */
+#proEditWrap li:nth-of-type(5) ul li:nth-of-type(2){
+    width: calc(100vw * (74 / 1920));
+    height: fit-content;
+}
+#switch {
+    position: absolute;
+    width: calc(100vw * (74 / 1920));
+    height: calc(100vw * (36 / 1920));
+    /* hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.switch_label {
+    position: relative;
+    display: inline-block;
+    width: calc(100vw * (74 / 1920));
+    height: calc(100vw * (36 / 1920));
+    background-color: #C8C8C8;
+    border-radius: calc(100vw * (20 / 1920));
+    transition: 0.2s;
+}
+.onf_btn {
+    width: calc(100vw * (28 /1920));
+    height: calc(100vw * (28 /1920));
+
+    position: absolute;
+    top: calc(100vw * (4 /1920));
+    left: calc(100vw * (3 /1920));
+    
+    border-radius: 50%;
+    background: #FFFFFF;
+    transition: 0.2s;
+}
+/* checking style */
+#switch:checked+.switch_label {
+    background-color: #FF005C;
+}
+/* move */
+#switch:checked+.switch_label .onf_btn {
+    top: calc(100vw * (4 /1920));
+    left: calc(100vw * (43 /1920)); 
+}
+/* 회원탈퇴 */
+#proEditWrap li:nth-of-type(6) a{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    font-size: calc(100vw * (16 / 1920));
+    color: #83888D;
+}
+/* footer */
+#footer{
+    width: 100%;
+    height: calc(100vw * (250 / 1920));
+
+    padding-left: calc(100vw * (50 / 1920));
+    padding-right: calc(100vw * (120 / 1920));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 2px solid #E7E7E7;
+}
+#footer div div{
+    margin-bottom: calc(100vw * (25 / 1920));
+}
+#footer div a{
+    color: #8C8C8C;
+    font-size: calc(100vw * (15 / 1920));
+}
+#footer p{
+    color: #8C8C8C;
+    font-size: calc(100vw * (15 / 1920));
+}
+#footer address{
+    color: #8C8C8C;
+    font-size: calc(100vw * (15 / 1920));
+}
+#footer ul{
+    width: calc(100vw * (190 / 1920));
+    height: calc(100vw * (45 / 1920));
+
+    display: flex;
+    justify-content: space-between;
+
+    align-self: center;
+}
+#footer ul li {
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-position: center;
+    width: calc(100vw * (30/1920));
+    height: calc(100vw * (44/1920));
+}
+#footer .sns li:nth-child(1) { 
+    background-image: url(../image/main/Instagram.png);
+    
+}
+#footer .sns li:nth-child(2) { 
+    background-image: url(../image/main/facebook.png);
+   
+}
+#footer .sns li:nth-child(3) { 
+    background-image: url(../image/main/TwitterX.png);
+    
+}
+
+/* 반응형 시작 */
+@media screen and ( max-width: 480px ){
+
+    #header{
+        width: 100%;
+        height: calc(100vw * (260 / 480));
+
+        position: relative;
+        margin: 0 auto;
+        flex-flow: column nowrap;
+        align-items: baseline;
+        
+        border-right: 0;
+        padding-top: calc(100vw * (25 / 480));
+    }
+    /* 모바일 헤더 */
+    #header #mobileHeader {
+        width: calc(100vw * (420 / 480));
+        height: calc(100vw * (25 / 480));
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+    }
+     #header #mobileHeader h1{
+        width: calc(100vw * (100 / 480));
+        height: calc(100vw * (25 / 480));
+        margin-bottom: calc(100vw * (0 / 480));
+
+        background-position: center;
+        background-size: contain;
+    }
+    #header #mobileHeader a {
+        display: block;
+        width: calc(100vw * (25 / 480));
+        height: calc(100vw * (17 / 480));
+
+        background: url(../image/sub_aside/threeBar.png) no-repeat center /cover;
+    }
+    #header .cssHeader {
+        display: block;
+        width: calc(100% - 60px);
+        height: fit-content;
+
+        margin: 0 auto;
+        margin-top: calc(100vw * (40 / 480));
+        margin-bottom: calc(100vw * (30 / 480));
+    }
+    #header .cssHeader dl {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #header .cssHeader dl dt{
+        width: calc(100vw * (80 / 480));
+        height: calc(100vw * (80 / 480));
+    
+        background-image: url(../image/main/profile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #header .cssHeader dl dd:nth-of-type(1) p:nth-of-type(1){
+        font-size: calc(100vw * (20 / 480));
+        font-weight: 900;
+        margin-bottom: calc(100vw * (5 / 480));
+    }
+    #header .cssHeader dl dd:nth-of-type(1) p:nth-of-type(2){
+        font-size: calc(100vw * (15 / 480));
+        font-weight: 500;
+        color: #83888D;
+    }
+    /* 맞춤정보수정 버튼 */
+    #header .cssHeader dl dd:nth-of-type(2){
+        width: calc(100vw * (100 / 480));
+        height: calc(100vw * (40 / 480));
+    }
+    #header .cssHeader dl dd:nth-of-type(2) a{
+        width: 100%;
+        height: 100%;
+    
+        display: block;
+        line-height: calc(100vw * (40 / 480));
+        text-align: center;
+    
+        font-size: calc(100vw * (12 / 480));
+        color: white;
+        font-weight: bold;
+        background-color: #FF005C;
+        border-radius: calc(100vw * (5 / 480));
+    }
+
+    /* 네비 */
+
+    #sideNav{
+        width: 100%;
+        height: calc(100vw * (55 / 480));
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-top: 1px solid #C8C8C8;
+        border-bottom: 1px solid #C8C8C8;
+    }
+    #sideNav ul {
+        width: calc(100vw *(365/480));
+        height: calc(100vw *(35/480));
+
+        display: flex;
+        justify-content: space-between;
+    }
+    #sideNav ul li:nth-of-type(1){
+        display: none;
+    }
+  
+    #sideNav ul li:not(:nth-of-type(1)){
+        padding-left: calc(100vw * (20 / 480));
+        padding-right: calc(100vw * (20 / 480));
+
+        /* 글 지우는 공식 */
+        text-indent: 100%;
+        white-space: nowrap;
+        background-position-x: 50%;
+
+        width: 40px; height: 30px;
+        a{
+            color: #00000000;
+            /* display: none; */
+        }
+    }
+    /* 홈지우기 */
+    #sideNav ul li:nth-of-type(2) {
+        display: none;
+    }
+
+    /* 메인 시작 */
+   
+    main {
+        width: calc(100vw * (480 / 480));
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        padding-top: calc(100vw * (50 / 480));
+
+    }
+    #proEdit{
+        width: calc(100vw * (350 / 480));
+    }
+    #proEditWrap{
+        display: flex;
+        align-items: flex-start;
+    }
+    #proEditWrap li:nth-of-type(1) {
+        display: none;
+    }
+    #proEditWrap #proheader {
+        display: none;
+    }
+    /* 성별 */
+    #proEditWrap li:nth-of-type(3){
+        width: calc(100vw * (350 / 480));
+        margin-bottom: calc(100vw * (10 / 480));
+    }
+    #proEditWrap li:nth-of-type(3) label{
+        font-size: calc(100vw * (18 / 480));
+        margin-bottom: calc(100vw * (10 / 480));
+        margin-left:  calc(100vw * (10 / 480));
+    }
+    #gender{
+        font-size: calc(100vw * (18 / 480));
+    }
+    #proEditWrap li:nth-of-type(3) form select{
+        width: calc(100vw * (350 / 480));
+        height: calc(100vw * (50 / 480));
+        padding-left: calc(100vw * (20 / 480));
+        border-radius: calc(100vw * (10 / 480));
+
+        font-size: calc(100vw * (18 / 480));
+        background-image: url(../image/underArrow.png);
+        background-repeat: no-repeat;
+        background-position: right calc(100vw * (35 / 480)) center;
+    }
+    #proEditWrap li:nth-of-type(3) form select option{
+        font-size: calc(100vw * (18 / 480));
+    }
+  
+        /* 지역 */
+    #proEditWrap li:nth-of-type(4){
+        width: calc(100vw * (350 / 480));
+        margin-bottom: calc(100vw * (10 / 480));
+    }
+    #proEditWrap li:nth-of-type(4) label{
+        font-size: calc(100vw * (18 / 480));
+        margin-bottom: calc(100vw * (10 / 480));
+        margin-left: calc(100vw * (10 / 480));
+    }
+    #local{
+        font-size: calc(100vw * (18 / 480));
+    }
+    #proEditWrap li:nth-of-type(4) form select{
+        width: calc(100vw * (350 / 480));
+        height: calc(100vw * (50 / 480));
+        padding-left: calc(100vw * (20 / 480));
+        border-radius: calc(100vw * (10 / 480));
+
+        font-size: calc(100vw * (18 / 480));
+        background-position: right calc(100vw * (35 / 480)) center;
+    }
+    #proEditWrap li:nth-of-type(4) form select option{
+        font-size: calc(100vw * (18 / 480));
+    }
+
+    /* 추천표시 */
+    #proEditWrap > li:nth-of-type(5){
+        font-size: calc(100vw * (18 / 480));
+        margin-bottom: calc(100vw * (10 / 480));
+    }
+    #proEditWrap li:nth-of-type(5) > p{
+        font-size: calc(100vw * (18 / 480));
+        margin-bottom: calc(100vw * (10 / 480));
+        margin-left: calc(100vw * (10 / 480));
+    }
+    #proEditWrap li:nth-of-type(5) ul{
+        width: calc(100vw * (350 / 480));
+        height: calc(100vw * (120 / 480));
+
+        /* flex-flow: row-reverse; */
+        
+        padding: 0 calc(100vw * (20 / 480));
+        border-radius: calc(100vw * (10 / 480));
+    }
+    #proEditWrap li:nth-of-type(5)>ul>li:nth-of-type(1){
+        display: block;
+        width: calc(100vw * (220 / 480));
+    }
+    #proEditWrap li:nth-of-type(5) ul > li p:nth-of-type(1){
+        font-size: calc(100vw * (15 / 480));
+    }
+    #proEditWrap li:nth-of-type(5) ul > li p:nth-of-type(2){
+        font-size: calc(100vw * (12 / 480));
+    }
+    /* 스위치 */
+    #proEditWrap li:nth-of-type(5) ul li:nth-of-type(2){
+        width: calc(100vw * (74 / 480));
+        height: fit-content;
+    }
+    #switch {
+        position: absolute;
+        width: calc(100vw * (74 / 480));
+        height: calc(100vw * (36 / 480));
+    }
+    .switch_label {
+        width: calc(100vw * (74 / 480));
+        height: calc(100vw * (36 / 480));
+        border-radius: calc(100vw * (20 / 480));
+    }
+    .onf_btn {
+        width: calc(100vw * (28 /480));
+        height: calc(100vw * (28 /480));
+
+        position: absolute;
+        top: calc(100vw * (4 /480));
+        left: calc(100vw * (3 /480));
+    }
+    /* move */
+    #switch:checked+.switch_label .onf_btn {
+        top: calc(100vw * (4 /480));
+        left: calc(100vw * (43 /480)); 
+    }
+    /* 회원탈퇴 */
+    #proEditWrap li:nth-of-type(6) a{
+        display: block;
+        font-size: calc(100vw * (16 / 480));
+    }
+
+    /* 푸터 */
+    #footer {
+        display: none;
+    }
+    
+}

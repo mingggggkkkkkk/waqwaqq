@@ -1,0 +1,143 @@
+
+#main {
+    width: 80%;
+
+    padding-left: calc(100vw * (500/ 1920));
+    padding-top: calc(100vw * (150 / 1920));
+    padding-bottom: calc(100vw * (140 / 1920));
+}
+#main h2 {
+    text-align: left;
+    padding-bottom: 30px;
+}
+#main #h_mo {
+    display: none;
+}
+#main #such_mo {
+    display: none;
+}
+#main .faq {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#main .faq li {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+#main .faq li:not(:last-child){
+    border-bottom: 2px dotted #d9d9d9;
+}
+#main .faq a  {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#main .faq a .frist {
+    font-weight: 600;
+    padding: 0 10px 0 15px;
+    color: #FF005C;
+}
+#main .faq .middle {
+    width: 80%;    
+}
+#main li div {
+    padding-left: 100px;
+    padding-top: 30px;
+    display: none;
+    font-weight: 400;
+}
+#main .icon {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(./img/sub_gung.png) no-repeat center / contain;
+}
+#main .a, .answer p {
+    display: inline;
+}
+#main .sutch {
+    margin-top: 20px;
+    text-align: right;
+}
+.sutch select {
+    height: 20px;
+}
+.sutch input {
+    height: 20px;
+}
+
+/* 어사이드 */
+aside {
+    position: absolute;
+    right: 0;
+}
+@media screen and (max-width: 1080px) {
+    #main {
+        width: 100%;
+        padding-left: 0;
+    }
+    #main #h_pc {
+        display: none;
+    }
+    #main .faq {
+        border: 0;
+    }
+    #main .faq.answer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    #main .sutch {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    #main .faq a {
+        font-size: 1rem;
+    }
+    #main .faq.icon {
+        width: 10px;
+        height:10px;
+    }
+    #main .faq div {
+       width: 100%;
+       padding-left: 60px;
+       font-size: 1rem;
+
+    } 
+}
+@media screen and (max-width: 500px) {
+    #main #such_mo {
+        display: block;
+        width: 415px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #E7E7E7;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    #main #such_mo p {
+        padding-left: 10px;
+    }
+    #main #such_mo img {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
+    #main .notice li > a {
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    #main .notice li {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

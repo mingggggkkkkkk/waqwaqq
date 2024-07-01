@@ -1,0 +1,116 @@
+#footer {
+    width: 100%;
+    height: calc(100vw * (256/1920));
+    margin-top: calc(100vw * (500/1920));
+    background-color: #FF005C;
+    padding-left: calc(100vw * (70/1920));
+    padding-top: calc(100vw * (8/1920));
+    position: relative;
+    z-index: 99;
+    
+}
+#footer div { 
+    margin-top: calc(70vw * (100/1920));
+}
+#footer .sns {
+    float: right;
+    margin-top: calc(100vw * (-130/1920));
+    margin-right: calc(100vw * (50/1920));
+    display: flex;
+    
+}
+#footer .sns li {
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-position: center;
+    width: calc(100vw * (30/1920));
+    height: calc(100vw * (44/1920));
+    margin-right: calc(100vw * (70/1920));
+}
+#footer .sns li:nth-child(1) { 
+    background-image: url(../image/sub_aside/Instagram.png);
+    
+}
+#footer .sns li:nth-child(2) { 
+    background-image: url(../image/sub_aside/Vector.png);
+   
+}
+#footer .sns li:nth-child(3) { 
+    background-image: url(../image/sub_aside/TwitterX.png);
+    
+}
+#footer p { 
+    margin-top: calc(100vw * (30/1920));
+}
+#footer address {
+    margin-top: calc(100vw * (5/1920));
+    margin-bottom: calc(100vw * (60/1920));
+}
+
+#footer div > a , #footer > p , address {
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    #footer div > a , #footer > p , address {
+        color: #8c8c8c;
+    }
+    #footer {
+        margin-top: 30px;
+        background-color: #DFE1E4;
+        width: 100%;
+        height: calc(100vw * (200/480));
+        font-size: calc(100vw * (10/480));
+        color: #8c8c8c;
+    }
+    #footer div {
+        margin: 0 auto;
+        margin-top: calc(100vw * (80/480));
+        text-align: center;
+        width: calc(100vw * (310/480));
+    }
+    #footer a {
+        color: #8c8c8c;
+    }
+    #footer p {
+        margin: 0 auto;
+        margin-top: calc(100vw * (7/480));
+        color: #8c8c8c;
+        width: calc(100vw * (310/480));
+        text-align: center;
+    }
+    #footer address {
+        margin: 0 auto;
+        width: calc(100vw * (290/480));
+        text-align: center;
+    }
+    #footer .sns {
+        width: 100%;
+        
+    }
+    #footer .sns li {
+        width: calc(100vw * (25/480));
+        height: calc(100vw * (25/480));
+        background-size: cover;
+    }
+    #footer .sns li:nth-child(1) {
+        background-image: url(../image/main/Instagram.png);
+        margin-left: 30%;
+        margin-top: calc(100vw * (-100/480));
+    }
+    #footer .sns li:nth-child(2) {
+        background-image: url(../image/main/facebook.png);
+        margin-left: calc(100vw * (40/480));
+        margin-top: calc(100vw * (-100/480));
+    }
+    #footer .sns li:nth-child(3) {
+        background-image: url(../image/main/TwitterX.png);
+        margin-left: calc(100vw * (40/480));
+        margin-top: calc(100vw * (-100/480));
+    }
+    #bottomSide {
+        display: none;
+    }
+}

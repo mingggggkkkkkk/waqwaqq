@@ -1,0 +1,565 @@
+#filter {
+    width: 100%;
+    height: 205vh;
+    background-color: white;
+    text-align: center;
+}
+#m_filter{
+    display: none;
+}
+
+.filterLineContainer {
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filterWrap {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    width: calc(100vw * ( 1340 / 1920 ));
+    margin: 0 auto;
+    overflow:scroll;
+    -ms-overflow-style: none;
+}
+ .filterWrap::-webkit-scrollbar{
+   display:none;
+ }
+
+
+
+
+.filterWrap li  {
+    width: calc( 100vw *( 1100 / 1920));
+    height: 45px;
+    text-align: center;
+    line-height: 40px;
+    margin: 3px;
+    
+}
+
+
+.filterWrap li:nth-of-type(2) {
+    margin-left: 220px;
+}
+.filterWrap li:nth-of-type(3) {
+    margin-left: 50px;
+}
+.filterWrap a {
+    display: inline-block;
+    border: 1px solid #FF005C;
+    color: #FF005C;
+    border-radius: calc(100vw * (20 / 1920));
+    font-size: calc(100vw * (20/1920));
+    
+}
+.selected {
+    background-color: #FF005C;
+    color: white !important;
+  }
+
+.filterLine1 a:nth-child(1) {
+    width: 110px;
+}
+
+ .filterLine1 a:nth-child(2)  {
+    width: 140px;
+}
+
+.filterLine1 a:nth-child(3) {
+    width: 140px;
+}
+
+.filterLine1 #filter4 {
+    width: 110px;
+}
+
+.filterLine1 #filter5 {
+    width: 140px;
+}
+
+.filterLine1 #filter6 {
+    width: 180px;
+}
+
+.filterLine1 #filter7{
+    width: 140px;
+}
+
+.filterLine2 #filter8 {
+    width: 140px;
+}
+
+.filterLine2 #filter9 {
+    width: 140px;
+}
+
+.filterLine2 #filter10 {
+    width: 110px;
+}
+
+.filterLine2 #filter11 {
+    width: 110px;
+}
+
+.filterLine2 #filter12 {
+    width: 140px;
+}
+
+.filterLine2 #filter13 {
+    width: 140px;
+}
+
+.filterLine2 #filter14 {
+    width: 140px;
+}
+
+.filterLine3 #filter15 {
+    width: 140px;
+}
+
+.filterLine3 #filter16 {
+    width: 180px;
+}
+
+.filterLine3 #filter17 {
+    width: 140px;
+}
+
+.filterLine3 #filter18 {
+    width: 110px;
+}
+
+.filterLine3 #filter19 {
+    width: 140px;
+}
+
+.filterLine3 #filter20 {
+    width: 140px;
+}
+
+.filterLine3 #filter21 {
+    width: 110px;
+}
+
+#filter div > p {
+    display: inline-block; 
+    margin: 0 30px; 
+    
+}
+.filterText {
+    display: inline-block;
+    position: relative;
+    margin-top: 7%;
+}
+.filterText p {
+    font-size: calc(100vw * (20/1920));
+}
+.filterText::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 15px; 
+    background-color: black; 
+}
+
+.filterLineContainer .filterWrap a:hover {
+    background-color: #FF005C;
+    color: white;
+}
+
+#filterMore {
+    margin: 5% auto 0;
+    width: 180px;
+    height: 50px;
+    background-color: #FF005C;
+    border-radius: calc(100vw * (20 / 1920));
+    text-align: center;
+    line-height: 50px;
+    
+}
+#filterMore a{
+    color: white;
+    font-size: calc(100vw * (20/1920));
+}
+.gridContainer {
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: calc(100vw * (16 / 1920));
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.gridItem {
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    position: relative;
+}
+.gridItem::after {
+    content: url(../image/main/rang.png);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.abcd {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #80808070;
+    z-index: 999;
+}
+
+.aa {
+    width: 70%;
+    height: 87vh;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: calc(100vw * (50/1920));
+    border-bottom-left-radius: calc(100vw * (50/1920));
+
+}
+.abcd .aa #abcdImage {
+    width: 60%;
+    height: 100%;
+    background-image: url(../image/main/pizza.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#abcdImage dl {
+    display: block;
+    width: 60%;
+    height: calc(100vw * (200/1920));
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: calc(100vw * (40/1920));
+    border-bottom-right-radius: calc(100vw * (40/1920));
+    padding: calc(100vw * (30/1920));
+}
+.abcd .aa #abcdImage:hover{
+    background-size: 120%;
+    transition: 0.5s;
+}
+#abcdImage:hover dl {
+    opacity: 0;
+    transition: 0.5s;
+}
+#abcdImage dl dt {
+    font-weight: bold;
+    font-size: calc(100vw * (20/1920));
+}
+#abcdImage dl dd {
+    width: 100%;
+    font-size: calc(100vw * (18/1920));
+    margin-top: calc(100vw * (10/1920));
+    overflow: hidden;
+}
+#abcdImage dl span {
+    width: 80%;
+    color: #575757;
+    float: right;
+}
+.abcd .aa #aaa {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.gridItem:nth-child(1) .menuLink:checked ~ .abcd {
+    display: block;
+    background-image: url(../image/main/hamberge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#chat {
+    padding: 40px 50px;
+}
+.chat1 {
+    display: flex;
+    padding-bottom: calc(100vw * (35/1920));
+}
+.chat1 > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.chat1 dl {
+    padding-left: calc(100vw *(25/1920));
+    text-align: left;
+}
+
+#yeah ul {
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(100vw * (-50/1920));
+    margin-bottom: calc(100vw * (38/1920));
+}
+#yeah ul li {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #FF005C;
+    border-radius: calc(100vw * (20 / 1920));
+    text-align: center;
+    line-height:  calc(100vw * (50/1920));
+    margin-right: calc(100vw * (20/1920));
+    background-color: white;
+    
+}
+#yeah ul li a {
+    color: #FF005C;
+}
+
+#cart {
+    border-top: 1px solid #E9E9E9;
+}
+#cart ul {
+    display: flex;
+    margin-top: calc(100vw * (12/1920));
+    justify-content: space-around;
+}
+
+#cart ul li {
+    text-indent: -9999px;
+}
+#cart ul li:nth-child(1){
+    width: 36px;
+    height: 36px;
+    background-image: url(../image/main/Heart_red.png);
+    background-repeat: no-repeat; 
+}
+#cart ul li:nth-child(2){
+    width: 36px;
+    height: 36px; 
+    background-image: url(../image/main/Bookmark\ Outline.png);
+    background-repeat: no-repeat;
+    padding-right: calc(100vw * (320/1920));
+    
+}
+#cart ul li:nth-child(3){
+    width: 36px;
+    height: 36px;
+    background-image: url(../image/main/cart.png);
+    background-repeat: no-repeat;
+    
+}
+.x {
+    background-image: url(../image/main/ex.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: calc(100vw * (15/1920));
+    right: calc(100vw * (15/1920));
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width:480px){
+    #filter{
+        height: auto;
+        display: none;
+    }
+    #m_filter{
+        display: block;
+    }
+    #m_filter .filterWrap li{
+        width: auto;
+        line-height: normal;
+        height: auto;
+        margin: auto;
+        margin-right: 5px;
+    }
+    #m_filter .filterWrap a{
+        padding: 9px 11px;
+        font-size: 16px;
+        border-radius: 20px;
+        display: flex;
+        color: #ff005c;
+        background-color: #fff;
+        border: 2px solid #FF005C;
+    }
+    #m_filter .filterWrap a.click{
+        color: #fff;
+        background-color: #FF005C;
+    }
+    #m_filter .filterWrap a button{
+        border: none;
+        background: url(../image/main/close_pink.png) center center no-repeat;
+        margin-left: 6px;
+    }
+
+    .gridItem::after{
+        transform:scale(0.5);
+        top: 0;
+        right: 0;
+    }
+    .filterLine1 a:nth-child(1){
+        width: max-content;
+     }
+     
+
+    #m_filter .filterWrap a.click button{
+        border: none;
+        background: url('../image/main/close.png')center center no-repeat;
+    }
+
+    #m_filter .filterLineContainer{
+        padding: 0 0 0 25px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .filterWrap{
+        width: auto;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        margin: 15px 0;
+    }
+
+    
+    
+    .filterText{
+        display: none;
+    }
+    
+    .filterWrap li:nth-of-type(2){
+        margin-left: 0;
+    }
+    #filterMore{
+        display: none;
+    }
+    #filter .gridContainer{
+        width: 100%;
+        height: auto;
+    }
+
+    #m_filter .abcd .aa{
+        flex-direction: column;
+        height: 75vh;
+        border-radius: 20px;
+    }
+
+    #m_filter .abcd .aa #abcdImage{
+        width: 100%;
+    }
+
+    #m_filter .abcd .aa #abcdImage dl{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        border-radius: 0;
+        padding: 20px;
+        backdrop-filter: none;
+        background-color: #fff;
+    }
+    #m_filter .abcd .aa #abcdImage dl span{
+        width: 70%;
+    }
+    #m_filter .abcd .aa #abcdImage dl dt{
+        font-size: 18px;
+    }
+    #m_filter .abcd .aa #abcdImage dl dd{
+        font-size: 15px;
+    }
+
+    #m_filter .abcd #abcdImage:hover dl{
+        opacity: 1;
+    }
+
+    
+    #m_filter .abcd #aaa{
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    #m_filter .abcd #aaa .x{
+        top: 15px;
+        right: 15px;
+    }
+    
+    #m_filter .abcd #aaa #cart{
+        height: auto;
+        border-top: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+    #m_filter .abcd #aaa #cart ul{
+        align-items: center;
+    }
+
+    #m_filter .abcd #aaa #cart ul li{
+        padding-right: 0;
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+    }
+
+    #m_filter .abcd #aaa #chat{
+        height: 65%;
+        padding: 20px;
+        overflow: scroll;
+    }
+
+    #m_filter .abcd .aa #abcdImage:hover{
+        border-radius: 20px;
+    }
+
+    #m_filter .abcd #aaa #chat .chat1{
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    #m_filter .abcd #aaa #chat .chat1 dl{
+        width: 70%;
+    }
+
+    #m_filter .abcd #aaa #chat .chat1 dl dd{
+        font-size: 13px;
+    }
+
+    #m_filter .abcd #aaa #yeah{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #m_filter .abcd #aaa #yeah ul{
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+    #m_filter .abcd #aaa #yeah ul li{
+        width: 48%;
+        line-height: normal;
+    }
+    #m_filter .abcd #aaa #yeah ul li a{
+        height: 50px;
+        line-height: 50px;
+    }
+    #m_filter .abcd #abcdImage{
+        position: relative;
+        background-position: center top;
+    }
+    
+}

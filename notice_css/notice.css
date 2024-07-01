@@ -1,0 +1,10 @@
+@import url(../css/common.css);
+@import url(./notice_header.css);
+@import url(../css/subFooter.css);
+@import url(./notice_main.css);
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

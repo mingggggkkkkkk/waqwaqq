@@ -1,0 +1,127 @@
+
+#main {
+    width: 80%;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-left: calc(100vw * (500/ 1920));
+    padding-top: calc(100vw * (150 / 1920));
+}
+#main h2 {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#main #h_mo {
+    display: none;
+}
+#main #such_mo {
+    display: none;
+}
+#main .notice {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#main .notice li{
+    padding: 30px;
+}
+#main .notice li:not(:last-child) {
+    border-bottom: 1px dotted #D9D9D9;
+}
+#main .notice a span {
+    font-weight: 700;
+    color: #FF005C;
+    padding-right: 30px;
+}
+.notice.icon {
+    display: none;
+}
+#main .color2{
+    color: #7a7a7a;
+    margin-left: 50px;
+}
+#main .num {
+    display: flex;
+    justify-content: center;
+}
+#main .num li {
+    font-size: 15px;
+    margin: 18px 16px 135px 16px;
+    }
+
+#main .num li a {
+    color: #B3B3B3;
+}
+
+/* 어사이드 */
+aside {
+    position: absolute;
+    right: 0; bottom: 0;
+}
+@media screen and (max-width: 1080px) {
+    #main {
+        width: 100%;
+        padding-left: 0;
+    }
+        #main #h_pc {
+        display: none;
+    }
+    #main .num {
+        display: none;
+    }
+    #main .notice {
+        border-top: 0;
+        border-bottom: 0;
+    }
+    #main .notice li.icon {
+        width: 24px;
+        height: 14px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #main .notice a span {
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #main #such_mo {
+        display: block;
+        width: 415px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #E7E7E7;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    #main #such_mo p {
+        padding-left: 10px;
+    }
+    #main #such_mo img {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
+    #main .notice li > a {
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    #main .notice li {
+        display: flex;
+        flex-direction: column;
+    }
+    #main .notice li span.color2 {
+        order: -1;
+        margin-left: 0;
+        font-size: 0.81em;
+    }
+}

@@ -1,0 +1,886 @@
+#filter {
+    height: 205vh;
+    background-color: white;
+    text-align: center;
+    margin-top: calc(100vw * (44/1920));
+    margin-left: calc(100vw *(200/1920));
+}
+
+.filterLineContainer {
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    padding-left: calc(100vw * (250/1920));
+}
+
+.filterWrap {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+    width: calc(100vw * (1340 / 1920));
+    margin: 0 auto;
+
+}
+
+
+.filterWrap li {
+    width: calc(100vw *(1100 / 1920));
+    height: calc(100vw * (45/1920));
+    text-align: center;
+    line-height: calc(100vw * (40/1920));
+    margin: calc(100vw * (3/1920));
+
+}
+
+
+.filterWrap li:nth-of-type(2) {
+    margin-left: calc(100vw * (220/1920));
+}
+
+.filterWrap li:nth-of-type(3) {
+    margin-left: calc(100vw * (50/1920));
+}
+
+.filterWrap a {
+    display: inline-block;
+    border: 1px solid #FF005C;
+    color: #FF005C;
+    border-radius: calc(100vw * (20 / 1920));
+    font-size: calc(100vw * (20/1920));
+
+}
+
+.filterWrap a:hover {
+    background-color: #FF005C;
+    color: white;
+}
+
+.filterWrap a.selected {
+    color: white;
+    background-color: #FF005C;
+}
+
+
+.filterLine1 a:nth-child(1) {
+    width: calc(100vw * (110/1920));
+}
+
+.filterLine1 a:nth-child(2) {
+    width: calc(100vw * (140/1920));
+}
+
+.filterLine1 a:nth-child(3) {
+    width: calc(100vw * (140/1920));
+}
+
+.filterLine1 #filter4 {
+    width: calc(100vw * (110/1920));
+}
+
+.filterLine1 #filter5 {
+    width: calc(100vw * (140/1920));
+}
+
+.filterLine1 #filter6 {
+    width: calc(100vw * (180/1920));
+}
+
+.filterLine1 #filter7 {
+    width: calc(100vw * (140/1920));
+}
+
+.filterLine2 #filter8 {
+    width: calc(100vw * (140/1920));
+}
+
+.filterLine2 #filter9 {
+    width: calc(100vw * (140/1920));
+}
+
+.filterLine2 #filter10 {
+    width: calc(100vw * (110/1920));
+}
+
+.filterLine2 #filter11 {
+    width: calc(100vw * (110/1920));
+}
+
+.filterLine2 #filter12 {
+    width: calc(100vw * (140/1920));
+}
+
+
+#filter div>p {
+    display: inline-block;
+    margin: 0 30px;
+
+}
+
+.filterText {
+    display: inline-block;
+    position: relative;
+    margin-top: 7%;
+    margin-left: calc(100vw * (205/1920));
+}
+
+.filterText p {
+    font-size: calc(100vw * (20/1920));
+}
+
+.filterText::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100vw* (1/1920));
+    height: calc(100vw* ( 15/1920));
+    background-color: black;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: calc(100vw * (30/1920));
+    grid-column-gap: calc(100vw * (30/1920));
+    margin-top: calc(100vw * (48/1920));
+    padding-left: calc(100vw * (340 / 1920));
+}
+
+.gridItem {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: calc(100vw * (388/1920));
+    height: calc(100vw * (585/1920));
+    border-radius: calc(100vw * (20/1920));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gridItem:nth-of-type(1) {
+    background-image: url(../image/main/hamberge.png);
+}
+
+.gridItem:nth-of-type(2) {
+    background-image: url(../image/main/Tteoktwisun.png);
+}
+
+.gridItem:nth-of-type(3) {
+    background-image: url(../image/main/store2.png);
+}
+
+.gridItem:nth-of-type(4) {
+    background-image: url(../image/main/samgyubsal.png);
+}
+
+.gridItem:nth-of-type(5) {
+    background-image: url(../image/main/stake.png);
+}
+
+.gridItem:nth-of-type(6) {
+    background-image: url(../image/main/store.png);
+}
+
+.gridItem:nth-of-type(7) {
+    background-image: url(../image/main/salde.png);
+}
+
+.gridItem:nth-of-type(8) {
+    background-image: url(../image/main/ross.png);
+}
+
+.gridItem:nth-of-type(9) {
+    background-image: url(../image/main/pizza.png);
+    
+}
+
+.gridItem .good {
+    display: none;
+}
+
+.gridItem dl {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: calc(100vw * (323/1920));
+    border-bottom-left-radius: calc(100vw * (20/1920));
+    border-bottom-right-radius: calc(100vw * (20/1920));
+    padding-left: calc(100vw * (30/1920));
+}
+
+.gridItem dl dt {
+    font-size: calc(100vw * (13/1920));
+    color: #FF005C;
+    text-align: left;
+    padding-top: calc(100vw * (20/1920));
+}
+
+.gridItem dl dd {
+    text-align: left;
+
+
+}
+.gridItem dl :nth-of-type(6) {
+    display: none;
+}
+.gridItem dl :nth-of-type(7) {
+    display: none;
+}
+.gridItem dl :nth-of-type(8) {
+    display: none;
+}
+.gridItem dl :nth-of-type(9) {
+    display: none;
+}
+
+.gridItem dl dd:nth-of-type(1) span {
+    width: 9%;
+    height: 10%;
+    float: right;
+}
+
+.gridItem dl dd:nth-of-type(1) {
+    font-size: calc(100vw *(20/1920));
+    border-bottom: 1px solid #ffffff5d;
+    margin-bottom: calc(100vw * (10/1920));
+    width: 93%;
+}
+
+.gridItem dl dd:nth-of-type(2) {
+    font-size: calc(100vw * (15/1920));
+    padding-top: calc(100vw * (5/1920));
+    position: relative;
+    top: calc(100vw * (-5/1920));
+}
+
+.gridItem dl dd:nth-of-type(2) span {
+    width: 37%;
+    float: right;
+
+}
+
+.gridItem dl dd:nth-of-type(3) {
+    font-size: calc(100vw * (15/1920));
+
+    margin-bottom: calc(100vw * (5/1920));
+    margin-top: calc(100vw * (5/1920));
+}
+
+.gridItem dl dd:nth-of-type(3) span {
+    width: 46%;
+    float: right;
+    margin-right: calc(100vw * (12/1920));
+}
+
+.gridItem dl dd:nth-of-type(4) {
+    border-top: 1px solid #ffffff5d;
+    padding-top: calc(100vw * (10/1920));
+    width: 95%;
+}
+
+.gridItem dl dd:nth-of-type(5) {
+    background-image: url(../image/main/Heart.png);
+    background-size: calc(100vw * (40/1920));
+    background-repeat: no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 93%;
+    height: calc(100vw * (40/1920));
+}
+
+
+
+#filterMore {
+    margin: 5% auto 0;
+    width: calc(100vw * (180/1920));
+    height: calc(100vw * (50/1920));
+    background-color: #FF005C;
+    border-radius: calc(100vw * (20 / 1920));
+    text-align: center;
+    line-height: calc(100vw * (50/1920));
+    margin-right: calc(100vw * (657/1920));
+}
+
+#filterMore a {
+    color: white;
+    font-size: calc(100vw * (20/1920));
+}
+
+#filterMain {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+#filterSub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100vw *(1600/1920));
+    height: calc(100vw * (750/1920));
+    background-color: white;
+    border-radius: calc(100vw * (20/1920));
+    transform: translate(-50%, -50%);
+}
+
+#subImage {
+    background-image: url(../image/main/pizza.png);
+    width: calc(100vw * (625/1920));
+    height: calc(100vw * (650/1920));
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: calc(100vw * (47/1920));
+    margin-left: calc(100vw * (90/1920));
+    text-indent: -9999px;
+    border-radius: calc(100vw * (20/1920));
+
+}
+
+#subTitle dl:nth-child(1) img {
+    width: calc(100vw * (30/1920));
+    height: calc(100vw * (30/1920));
+}
+
+#subTitle>dl:nth-child(1)>dt {
+    font-size: calc(100vw *(40/1920));
+    font-weight: bold;
+}
+
+#subTitle>dl:nth-child(1) dd {
+    color: #D9D9D9;
+}
+
+#subTitle>dl:nth-child(1)>dd:nth-child(3) {
+    margin-top: calc(100vw * (10/1920));
+}
+
+#subTitle>dl:nth-child(1) span {
+    color: #000;
+    position: relative;
+    top: calc(100vw * (-10/1920));
+}
+
+#subTitle>dl:nth-child(2) {
+    width: calc(100vw * (750/1920));
+    height: calc(100vw * (160/1920));
+    border: 2px solid #D9D9D9;
+    border-radius: calc(100vw * (20/1920));
+    margin-top: calc(100vw *(20/1920));
+    padding-top: calc(100vw *(23/1920));
+
+
+}
+
+#subTitle>dl:nth-child(2)>dt {
+    margin-left: calc(100vw * (35/1920));
+    margin-bottom: calc(100vw *(5/1920));
+    font-size: calc(100vw *(20/1920));
+    font-weight: bold;
+}
+
+#subTitle>dl:nth-child(2)>dd {
+    margin-left: calc(100vw *(35/1920));
+    width: 90%;
+}
+
+#subTitle #noticeWrap {
+    width: calc(100vw * (483/1920));
+    height: calc(100vw * (325/1920));
+    border: 2px solid #d9d9d9;
+    margin-top: calc(100vw * (20/1920));
+    border-radius: calc(100vw * (20/1920));
+    padding-top: calc(100vw * (20/1920));
+    padding-left: calc(100vw * (35/1920));
+    position: relative;
+    p{
+        display: block;
+        border: 1px solid red;
+        position: absolute;
+        padding: 0px 12px;
+        border-radius: 5px;
+        text-align: center;
+        color: #FF005C;
+        border: 1px solid #FF005C;
+        right: 92px;
+        top: 21px;
+        line-height: 20px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+}
+
+#notice>ul>li {
+    color: #D9D9D9;
+}
+
+#subTitle {
+    position: absolute;
+    top: calc(100vw *(45/1920));
+    right: calc(100vw * (90/1920));
+}
+
+#subNav {
+    position: absolute;
+    top: calc(100vw *(320/1920));
+    right: 0px;
+    background-image: url(../image/main/subNav.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vw * (325/1920));
+    width: calc(100vw * (250/1920));
+    border-radius: calc(100vw * (20/1920));
+
+}
+
+#subNav div {
+    width: calc(100vw * (100/1920));
+    height: calc(100vw *(30/1920));
+    text-align: center;
+    line-height: calc(100vw *(30/1920));
+    border-radius: calc(100vw *(20/1920));
+    transform: translate(80%, 900%);
+    background-color: #FF005C;
+}
+
+#subNav div a {
+    color: white;
+}
+
+#leftRight {
+    background-image: url(../image/main/leftRight.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: calc(100vw * (50/1920));
+    height: calc(100vw *(22/1920));
+}
+
+div#notice {
+    display: flex;
+    column-gap: calc(100vw *(30/1920));
+
+    .noticeContents {
+        height: calc(100vw * (130/1920));
+        width: calc(100vw *(80/1920));
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        
+
+        dd {
+            font-size: calc(100vw * (18/1920));
+            line-height: 1.5;
+            color: #D9D9D9;
+        }
+    }
+
+    .noticeContainer {
+        height: calc(100vw * (130/1920));
+        width: fit-content;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        dd {
+            font-size: calc(100vw * (18/1920));
+            line-height: 1.5;
+        }
+    }
+}
+.subNotice{
+    margin-top: calc(100vw * (8/1920));
+    display: flex;
+    font-size: calc(100vw * (18/1920));
+    line-height: 1.5;
+    column-gap: calc(100vw * (74/1920));
+    li~li>ul{
+        display: flex;
+        flex-flow: column;
+        gap: calc(100vw * (8/1920));
+    }
+
+}
+.subNotice > li {
+    color: #D9D9D9;
+}
+
+#leftRight{
+    position: relative;
+    left: 82%;
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.x {
+    background-image: url(../image/main/ex.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100vw * (25/1920));
+    height: calc(100vw * (25/1920));
+}
+
+@media screen and (max-width: 480px) {
+    .subMain #filter {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .subMain .filterLineContainer {
+        margin-top: calc(100vw* (35/480));
+        width: 100%;
+        height: 100%;
+    }
+    
+    .subMain .filterWrap a {
+        font-size: calc(100vw * (16/480));
+    }
+    .subMain .filterLine1 {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: calc(100vw * (5/480));
+    }
+    .subMain .filterLine2 {
+        
+        width: 100%;
+        height: auto;
+        margin: 0 !important;
+        display: flex;
+        justify-content: flex-end;
+    } 
+    .subMain .filterLine1 a {
+        padding: calc(100vw * (15/480));
+        width: auto !important;
+        border-radius: calc(100vw * (20/480));
+        margin-right: calc(100vw * (5/480));
+    }
+    .subMain .filterLine2 a {
+        width: auto !important;
+        padding: calc(100vw * (15/480));
+        border-radius: calc(100vw * (20/480));
+        margin-left: calc(100vw * (5/480));
+    }
+    .subMain .filterLineContainer {
+        padding-left: 0;
+    }
+    
+    
+    .subMain #filter5 {
+        display: none;
+    }
+    .subMain #filter6 {
+        display: none;
+    }
+    
+    .subMain #filter12 {
+        display: none;
+    }
+    .subMain .filterText {
+        margin-left: 0;
+    }
+    .subMain .filterText p {
+        font-size: calc(100vw * (16/480));
+    }
+    .filterText::before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw* (1/480));
+        height: calc(100vw* ( 15/480));
+        background-color: black;
+    }
+    .gridContainer {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .subMain .gridContainer {
+        width: 100%;
+    }
+    .subMain .gridContainer .gridItem {
+        display: flex;
+        width: calc(100vw * (200/480));
+        height: calc(100vw * (200/480));
+        border-radius: calc(100vw * (20/480));
+        margin: calc(100vw * (5/480));
+        
+    }
+    .gridItem dl {
+        width: 100%;
+        height: calc(100vw * (92/480));
+        padding: calc(100vw * (12/480));
+    }
+    .gridItem dl dt {
+        display: none;
+    }
+    .gridItem dl dd:nth-of-type(6) {
+        display: block;
+        font-size: calc(100vW * (13/480)) !important;
+        margin-bottom: calc(100vw * (5/480));
+    }
+    .gridItem dl dd:nth-of-type(7) {
+        display: block;
+        font-size: calc(100vw * (10/480)) !important;
+        margin-bottom: calc(100vw * (3/480));
+    }
+    .gridItem dl dd:nth-of-type(8) {
+        font-size: calc(100vw * (10/480)) !important;
+        display: block;
+    }
+    .gridItem dl dd:nth-of-type(9) {
+        font-size: calc(100vw * (10/480)) !important;
+        display: block;
+    }
+    .gridItem dl dd:nth-of-type(7) span {
+        color: #575757;
+        margin-left: calc(100vw * (33/480));
+        
+    }
+    .gridItem dl dd:nth-of-type(8) span {
+        color: #575757;
+        margin-left: calc(100vw * (14/480));
+    }
+    .gridItem dl dd:nth-of-type(9) span {
+        color: #575757;
+        margin-left: calc(100vw * (14/480));
+    }
+   
+    .gridItem dl dd:nth-child(2) {
+        display: none;
+    }
+    
+    .gridItem dl dd:nth-child(3) {
+        display: none;
+    }
+    .gridItem dl dd:nth-child(4) {
+        display: none;
+    }
+    .gridItem dl dd:nth-of-type(1) {
+        display: none;
+    }
+    
+    .gridItem dl dd:nth-of-type(1) {
+        border-bottom: none;
+    }
+    .subMain .gridContainer .gridItem dl dd:nth-of-type(4) {
+        display: none;
+    }
+    .subMain .gridContainer .gridItem:nth-of-type(3) {
+        display: none;
+    }
+    .subMain .gridContainer .gridItem:nth-of-type(6) {
+        display: none;
+    }
+    .subMain .gridContainer .gridItem:nth-of-type(9) {
+        display: none;
+    }
+    .gridContainer {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        
+    }
+    .gridItem dl dd:nth-of-type(5) {
+        display: none;
+    }
+    .subMain .gridItem dl dt {
+        font-size: calc(100vw * (13/480));
+    }
+    .subMain .gridItem dl dd {
+        font-size: calc(100vw * (8/480));
+    }
+    .subMain #filterMore {
+        margin: 5% auto;
+        border-radius: calc(100vw * (20/480));
+        width: calc(100vw * (180/480));
+        height: calc(100vw * (50/480));
+    }
+    .subMain #filterMore a {
+        font-size: calc(100vw * (20/480));
+        line-height: calc(100vw * (50/480));
+    }
+    .gridItem #good {
+        display: block;
+        background-image: url(../image/main/Heart.png);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: 93%;
+        height: 50%;
+        background-position: right top;
+    }
+    #filterSub {
+        width: calc(100vw * (336/480));
+        height: calc(100vw * (624/480));
+    }
+    #subImage {
+        margin: 5% auto;
+        width: calc(100vw * (300/480));
+        height: calc(100vw * (290/480));
+        background-size: cover;
+        position: relative;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    #subTitle {
+        width: 88%;
+        height: 46%;
+        overflow: scroll;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .x {
+        width: calc(100vw * (30/480));
+        height: calc(100vw * (30/480));
+        position: absolute;
+       
+    }
+    #subTitle > dl:nth-child(2) {
+        width: 100%;
+    }
+    #subTitle > dl:nth-child(1) > dt {
+        font-size: calc(100vw * (30/480));
+    }
+    #subTitle > dl:nth-child(1) > dd {
+        font-size: calc(100vw * (15/480));
+    }
+    #subTitle > dl:nth-child(1) > dd img {
+        width: calc(100vw * (25/480));
+        height: calc(100vw * (25/480));
+    }
+    #subTitle > dl:nth-child(1) > dd span {
+        font-size: calc(100vw * (16/480));
+        position: relative;
+        top: calc(100vw * (-8/480));
+        
+
+    }
+    
+
+    #subTitle > dl:nth-child(2) {
+        width: 100%;
+        height: calc(100vw * (200/480));
+    }
+    #subTitle > dl:nth-child(2)  dd{
+        margin-left: calc(100vw * (15/480)); 
+        width: 90%;
+        height: calc(100vw * (130/480));
+        font-size: calc(100vw * (18/480)) !important;
+        line-height: calc(100vw * (18/480));
+        margin-top: calc(100vw * (5/480));
+        
+
+       
+    }
+    
+    
+    
+    #subTitle > dl:nth-child(2) > dt {
+        font-size: calc(100vw * (20/480));
+        font-weight: bold;
+        margin-top: calc(100vw * (5/480));
+        margin-left: calc(100vw * (15/480));
+        
+
+    }
+    #noticeWrap {
+        margin-top: calc(100vw * (10/480)) !important;
+        width: 100% !important;
+        height: calc(100vw * (300/480)) !important;
+        
+    }
+    #subNav {
+        width: 100% !important;
+        height: calc(100vw * (300/480)) !important;
+        background-size: cover !important;
+        margin-top: calc(100vw * (540/480));
+        
+    }
+    #subNav div {
+        width: calc(100vw * (190/480));
+        height: calc(100vw * (50/480));
+        transform: translate(30%, 470%);
+        border-radius: calc(100vw * (20/480));
+        
+    }
+    
+    .subNotice {
+        font-size: calc(100vw * (15/480));
+        padding-top: calc(100vw * (100/480));
+        margin-bottom: calc(100vw * (15/480));
+
+    }
+    .subNotice li:nth-child(2) ul li  {
+        margin-left: calc(100vw * (33/480));
+    }
+    .subNotice li:nth-child(3) ul li {
+        text-align: right;
+    }
+    #subNav div a {
+        text-align: center;
+        line-height: calc(100vw * (50/480));
+        
+    }
+    #notice {
+        width: 95%;
+        margin-top: calc(100vw * (10/480));
+    }
+    .noticeContents {
+        width: 35% !important;
+
+    }
+    .noticeContents dd:nth-child(5) {
+        margin-top: calc(100vw * (23/480));
+    }
+    .noticeContents dd {
+        padding-bottom: calc(100vw * (5/480));
+    }
+    .noticeContents dd  {
+        font-size: calc(100vw * (15/480)) !important;
+        width: 100%;
+    }
+    .noticeContainer dd {
+        font-size: calc(100vw * (15/480)) !important;
+        padding-bottom: calc(100vw * (5/480));
+    }
+    
+    #leftRight {
+        width: calc(100vw * (49/480));
+        height: calc(100vw * (18/480));
+        background-size: contain;
+    }
+
+    #subTitle #noticeWrap > p {
+        position: absolute;
+        right: calc(100vw * (8/480));
+        top: calc(100vw * (13/480));
+    }
+}
+
+

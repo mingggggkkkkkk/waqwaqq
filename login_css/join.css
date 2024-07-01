@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    /* 헤더 */
+#header {
+border-bottom: 1px solid #D9D9D9;
+}
+#header h1 {
+    width: 150px;
+    height: 37px; 
+    margin: 50px auto 20px;
+    background: url(../image/main/logo_pink.png) no-repeat center /cover;
+    }
+#header #langBox {
+    position: absolute;
+    top: 40px;
+    right: 360px;
+}
+#header #lang {
+    width: 90px;
+    height: 30px;
+    border: 1px solid #A6A6A6;
+    color: #A6A6A6;
+}
+/* 메인 */
+#main{
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    font-family: 'GmarketSansMedium';
+}
+#main form .agree {
+    font-size: 25px;
+}
+#main .checkbox{
+    display: none;
+}
+#main label{
+    font-size: 18px;
+}
+#main .Explanation {
+    font-size: 15px;
+    color: #83888D;
+    margin: 10px 0 50px 30px;
+}
+#main .grey {
+    width: 410px;
+    font-size: 15px;
+    color: #83888D;
+}
+#main .joinBox {
+    margin-bottom: 35px;
+}
+#main .joinBox span {
+    color: #83888D;
+}
+#main .joinBox .pink {
+    color: #FF005C;
+}
+#main .textBox{
+    width: 505px;
+    height: 197px;
+    padding: 18px 35px;
+    margin-top: 15px;
+    overflow: scroll;
+    border: 1px solid #828282;
+    border-radius: 5px;
+}
+/* 스크롤바 커스텀 */
+#main .textBox::-webkit-scrollbar {
+    width: 10px;
+}
+#main .textBox::-webkit-scrollbar-thumb {
+    height: 52px;
+    background-color: #83888D;
+    border-radius: 10px;
+}
+button {
+    width: 500px;
+    line-height: 60px;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    background-color: #83888D;
+}
+.on {
+    background-color: #FF005C;
+}
+  /* label:before에 체크하기 전 상태 CSS */
+  main form input.checkbox + label:before{
+    content:"";
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin: 10px 10px 10px 0; 
+    border:1px solid #828282;
+    border-radius: 4px;
+    vertical-align:middle;
+
+    background-color:#fff;
+    background-image: url('../image/sub_aside/Chk.png');
+    background-repeat: no-repeat;
+    background-size: 19px 15px;
+    background-position: 50%;
+}
+input.checkbox:checked + label:before{
+    content:"";
+    background-color:#fff;
+    background-image: url('../image/sub_aside/Chk_p.png');
+    background-repeat: no-repeat;
+    background-size: 27px;
+    background-position: 50%;
+}
+/* 푸터 */
+#footer {
+    margin: 0;
+}
+@media screen and (max-width: 1080px) {
+    #header {
+        border: none;
+    }
+    #header #langBox {
+        display: none;
+    }
+}
+ @media screen and (max-width: 980px) {
+    #header {
+       border: none;
+       
+       margin: 0 auto;
+       width: calc( 100% - 130px);
+       margin: 65px;
+        }
+    #header h1 {
+        margin-left: 0;
+    }
+    #header #langBox {
+            display: none;
+        }
+    #main {
+        width: 100%;
+    }
+    #main .grey {
+        width: auto;
+    }
+     #main  form {
+        padding: 0 65px;
+    }
+    #main .textBox {
+    width: 100%;     
+    padding: 15px;   
+    }
+    button {
+        width: calc( 100% - 130px);
+        margin: 65px;
+    }
+    /* 푸터 */
+    #footer {
+        display: none;
+    }
+} 
+@media screen and (max-width: 360px) {
+    #main {
+        width: 360px;
+    }
+}

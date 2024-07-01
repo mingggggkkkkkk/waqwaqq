@@ -1,0 +1,116 @@
+section#map{
+    padding: 200px 358px 358px 358px;
+}
+
+section#map>div#abcWrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+#abcWrap #m_mapMore{
+    display: none;
+}
+
+#inf {
+    position: relative;
+}
+#inf>iframe{
+    width: calc(100vw * (818 / 1920));
+    height: calc(100vw * (1024/1920));
+    padding: 0;
+    margin: 0;
+}
+#abc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#abc>div p{
+    font-size: calc(100vw * (40/1920));
+    font-weight: bold;
+    line-height: 1.5;
+}
+#abc>div p span{
+
+    color: #FF005C;
+}
+#inf #search {
+    
+}
+#map #mapMore li {
+    margin-top: calc(100vw * (70/1920));
+    text-align: center;
+    line-height: calc( 100vw * (50/ 1920));
+    border-radius: calc(100vw * (20 / 1920));
+    
+}
+#map #mapMore li a {
+    color: white;
+}
+#map #mapMore li:nth-child(1) {
+   background-color: #FF005C;
+   width: calc( 100vw * (180 / 1920));
+   height: calc(100vw * (50/1920));
+}
+#map #mapMore li:nth-child(2) {
+    margin-top: calc(100vw * (20/1920));
+    background-color: #FF005C;
+    width: calc( 100vw * (180 / 1920));
+    height: calc(100vw * (50/1920));
+}
+
+
+
+#best5 { 
+    display: flex;
+    margin-top: calc(100vw * (100 / 1920));
+    justify-content: space-between;
+}
+#best5 ul {
+    
+    position: relative;
+    width: calc(100vw * (360/1920));
+    height: calc(100vw * (269/1920));
+    border-radius: calc(100vw * (20 / 1920));
+}
+#best5 ul li {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    height: calc(100vw * (73/1920));
+    background-color: rgba(255, 0, 92, 0.6);
+    
+}
+#best5 ul:nth-child(1){
+    background-image: url(../image/main/store.png);
+}
+#best5 ul:nth-child(2){
+    background-image: url(../image/main/store2.png);
+}
+#best5 ul:nth-child(3){
+    background-image: url(../image/main/makchang.png);
+}
+#best5 ul li p{
+    text-align: center;
+    line-height: calc(100vw * (73/1920));
+    color: white;
+    font-size: calc(100vw * (20/1920));
+    font-weight: bold;
+    
+}
+#best5 ul li:first-child {
+    border-bottom-left-radius: calc(100vw * (20 / 1920));
+}
+#best5 ul li:last-child {
+    border-bottom-right-radius: calc(100vw * (20 / 1920));
+}
+#mapChar{
+    text-indent: -9999px;
+    background-image: url(../image/main/character_2.png);
+    background-repeat: no-repeat;
+    width: 294px;
+    height: 279px;
+   
+}

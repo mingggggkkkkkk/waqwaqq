@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  /* 헤더 */
+#header {
+    border-bottom: 1px solid #D9D9D9;
+    }
+#header h1 {
+        width: 150px;
+        height: 37px;
+        margin: 50px auto 20px;
+        background: url(../image/main/logo_pink.png) no-repeat center /cover;
+        }
+#header #langBox {
+    position: absolute;
+    top: 40px;
+    right: 360px;
+}
+#header #lang {
+    width: 90px;
+    height: 30px;
+    border: 1px solid #A6A6A6;
+    color: #A6A6A6;
+}
+/* 언어 */
+#language { overflow: hidden; 
+    width: 137px; 
+    height: 53px;
+    border: 1px solid #ccc;
+}
+#language a { 
+      display: block; 
+      width: 137px; 
+      height: 53px; 
+      background: no-repeat 10px center; color: #000;
+      line-height: 53px;
+      font-family: 'GmarketSansBold';
+      padding-left: 80px;
+}
+#language dd:first-of-type a { background-image: url(../images/lang-kr.png); }
+#language dd:nth-of-type(2) a { background-image: url(../images/lang-us.png); }
+#language dd:last-of-type a { background-image: url(../images/lang-vn.png); }
+
+/* 본문시작 */
+#user {
+    width: 100%;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#user h2 {
+    margin-bottom: 60px;
+}
+#user form input {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+    padding-left: 30px;
+
+}
+#user form input#chk_1 {
+    margin: 0px;
+    display: none;
+}
+  /* label:before에 체크하기 전 상태 CSS */
+  main form input#chk_1 + label:before{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin: 10px 10px 10px 15px; 
+    border:1px solid #828282;
+    border-radius: 4px;
+    vertical-align:middle;
+
+    background-color:#fff;
+    background-image: url('../image/sub_aside/Chk.png');
+    background-repeat: no-repeat;
+    background-size: 19px 15px;
+    background-position: 50%;
+}
+input#chk_1:checked + label:before{
+    content:"";
+    background-color:#fff;
+    background-image: url('../image/sub_aside/Chk_p.png');
+    background-repeat: no-repeat;
+    background-size: 27px;
+    background-position: 50%;
+}
+#user button {
+    width: 500px;
+    height: 60px;
+    margin: 5px;
+    flex-direction: row;
+    border-width: 0px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+#user button#lo {
+    background-color: #FF005C;
+    margin-top: 47px;
+}
+#naver {
+    background-color: #09AA5C;
+}
+#user #kakao {
+    background-color: #F6C700;
+    color: #3A1D1F;
+}
+#user div {
+    display: flex;
+}
+#user div a {
+    margin: 30px;
+    display: block;
+    color: #83888D;
+    font-size: 15px;
+}
+/* 푸터 */
+#footer {
+    margin: 0;
+}
+@media screen and (max-width: 1080px) {
+    #header {
+       border: none;
+        }
+    #header #langBox {
+     display: none;
+    }
+    /* 본문시작 */
+    #header h1 {
+        margin: 80px auto 105px;
+    }
+    #user {
+        margin-top: 0;
+    }
+    /* 푸터 */
+    #footer {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    #user form input {
+        width: 400px;
+        /* width: 100%; */
+    }
+    #user button {
+        width: 400px;
+    }
+    #user div {
+        justify-content: space-between;
+        text-align: center;
+    }
+    #user div a {
+        width: 100px;
+        margin: 20px;
+    }
+}

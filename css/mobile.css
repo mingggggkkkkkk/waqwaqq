@@ -1,0 +1,322 @@
+@media screen and (max-width: 480px) {
+    #header{
+        display: none;
+    }  
+
+    #m_hd{
+        height: 70px;
+        width: 100%;
+        padding: 25px 25px 14px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #m_hd > a {
+        width: 100px;
+        height: 25px;
+        background: url('../image/main/logo_black.png')center center no-repeat;
+        background-size: contain;
+    }
+    #m_hd .hd_search_wrap form{
+        position: relative;
+    }
+    #m_hd .hd_search_wrap{
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    #m_hd .hd_search_wrap input{
+        outline: none;
+        border: none;
+        padding: 6px 0 6px 20px;
+        border-right: 1px solid #000;
+        border-radius: 10px  0 0 10px;
+        width: 86%;
+    }
+
+    #m_hd .hd_search_wrap #hd_search_context + .ph{
+        position: absolute;
+        left: 20px;
+        top: 3px;
+        width: 75%;
+        color: #8A8A8A;
+    }
+    #m_hd .hd_search_wrap #hd_search_context + .ph.click{
+        display: none;
+    }
+    #m_hd .hd_search_wrap #hd_search_context + .ph #pnk{
+        color: #FF005C;
+    }
+
+    #m_hd .hd_search_wrap form{
+        display: flex;
+    }
+
+    #m_hd .hd_search_wrap form button{
+        background-color: #FF005C;
+        border: none;
+        width: 15%;
+        height: 30px;
+        border-radius: 0 10px 10px 0;   
+    }
+
+    #m_hd .hd_search_wrap form button img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    #m_hd .hd_mn{
+        position: relative;
+        width: 25px;
+        height: 16px;
+        
+    }
+
+    #m_hd .hd_mn span{
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        z-index: 999;
+        transition: all.3s;
+        
+    }
+
+
+    #m_hd .hd_mn .hd_mn_lst{
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        height: 100vh;
+        background-color: #fff;
+        top: 0;
+        position: fixed;
+        z-index: 99;
+        right: -300px;
+        padding: 30px 20px;
+        border-left: 1px solid #ddd;
+        transition: all.3s;
+    }
+
+    #m_hd .hd_mn .hd_mn_lst .hd_close_wrap{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #m_hd .hd_mn .hd_mn_lst .hd_close{
+        width: 22px;
+        
+    }
+
+    #m_hd .hd_mn.active .hd_mn_lst{
+        right: 0;       
+    }
+
+
+    #m_hd .hd_mn.active .hd_mn_lst > ul{
+        margin-top: 40px;
+    }
+
+    #m_hd .hd_mn .hd_mn_lst ul li{
+        margin-bottom: 20px;
+    }
+
+    #title {
+        display: none;
+    }
+    #filter .gridContainer {
+        width: 430px;
+        height: 430px;
+    }
+
+    #suggest {
+        height: auto;
+        padding:25px;
+    }
+    #suggest .suggestContainer {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+     }
+     #suggestMore{
+        display: none;
+     }
+
+     
+
+
+     #suggest #suggestWrap .m_suggest{
+        display: flex;
+        justify-content: space-between;
+     }
+     #suggest #suggestWrap > p{
+        display: none;
+     }
+
+     .suggestContainer .swiper-slide{
+        height: 200px !important;
+        background-size:contain !important;
+        background-repeat: no-repeat !important;
+     }
+
+     .suggestContainer .swiper-slide a dl{
+        height: 92px;
+        padding: 10px 14px;
+     }
+     .suggestContainer .swiper-slide dl span{
+        width: auto;
+     }
+     .suggestContainer .swiper-slide dl dt{
+        font-size: 13px;
+     }
+     .suggestContainer .swiper-slide dl dd{
+        font-size: 10px;
+        
+     }
+
+     .button {
+        /* width: 100px; */
+        display: none;
+     }
+     .m_grid{
+        width: 100%;
+        padding: 0 25px;
+        display: block;
+     }
+    .m_grid .m_grid_wrap{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: calc(100vw * (16 / 1920));
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+     .m_grid .gridItem{
+        width: calc(100%/3 - 3px);
+     }
+
+     .m_grid .gridItem a img{
+        width: 100%;
+        height: 100%;
+     }
+
+     #suggestWrap p{
+        height: auto;
+        line-height: normal;
+        font-size: 18px;
+        text-align: left;
+     }
+
+     section#map{
+        padding: 55px 55px 25px;
+     }
+     #abc>div p{
+        font-size: 40px;
+     }
+     #mapChar{
+        width: 110px;
+        height: 99px;
+        background-size: contain;
+     }
+
+     section#map>div#abcWrap{
+        flex-direction: column;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+     }
+
+     #abcWrap #m_mapMore{
+        display: block;
+    }
+     #abc>div #mapMore{
+        display: none;
+     }
+     #m_mapMore{
+        display: block;
+     }
+
+     #m_mapMore li{
+        width: 100%;
+        background-color: #FF005C;
+        border-radius: 20px;
+     }
+     #m_mapMore li:first-child{
+        margin-bottom: 5px;
+     }
+     #m_mapMore li a,
+     #m_mapMore li #m_my_position{
+        width: 100%;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+     }
+     
+     #abc{
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 40px;
+     }
+     
+     #inf{
+        margin-bottom: 20px;
+     }
+
+     #inf>iframe{
+        width: 100%;
+     }
+
+     #abcWrap{
+        position: relative;
+     }
+
+     #abcWrap::after{
+        content: '';
+        background-color: #DFE1E4;
+        width: 100vw;
+        position: absolute;
+        bottom: -20px;
+        left: -55px;
+        height: 20px;
+     }
+
+     #best5{
+        flex-direction: column;
+     }
+
+     #best5 ul{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 380/269;
+        margin-bottom: 15px;
+        background-position:center;
+     }
+     #best5 ul:last-child{
+        margin-bottom: 0;
+     }
+     #best5 ul li{
+        height: 73px;
+     }
+     #best5 ul li p{
+        font-size: 20px;
+        font-weight: bold;
+        /* line-height: 100%; */
+        line-height: 73px;
+     }
+
+     #bottomSide{
+        display: none;
+     }
+
+
+
+     #footer{
+        margin: auto;
+     }
+
+}

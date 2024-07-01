@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/subManager.css">
+    <title>suv</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="hideText">main</h1>
+        <nav id="gnb">
+            <ul>
+                <li><a href="./main.html">home</a></li>
+                <li><a href="#">filter</a></li>
+                <li>
+                    <a href="#">store</a>
+                    <ul class="subMenu">
+                        <li><a href="./sub.html">추천매장</a></li>
+                        <li><a href="#">위치찾기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">community</a>
+                    <ul class="subMenu">
+                        <li><a href="./gon.html">공지사항</a></li>
+                        <li><a href="./faq.html">고객센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="myPage">my page</a>
+                    <ul class="subMenu">
+                        <li><a href="#">내정보</a></li>
+                        <li><a href="./bookmark.html">찜한 매장</a></li>
+                        <li><a href="./bookmark.html">MY 리뷰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav id="snb">
+            <ul>
+                <li><a href="#" class="home">홈</a></li>
+                <li><a href="./propyl.html" class="baskit">프로필 편집</a></li>
+                <li><a href="./bookmark.html" class="bookmark">나의 찜</a></li>
+                <li><a href="./bookmark.html" class="alarm">나의 리뷰</a></li>
+                <li><a href="./RecentOrders.html" class="shopping">최근주문</a></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="m_hd">
+        <a class="hideText" href="#">main</a>
+        <div class="hd_mn">
+            <img src="./image/main/hd_mn.png" alt="">
+            <div class="hd_mn_lst">
+                <div class="hd_close_wrap">
+                    <img src="./image/main/hd_close.png" alt="" class="hd_close">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">FILTER</a>
+                    </li>
+                    <li>
+                        <a href="#">STORE</a>
+                    </li>
+                    <li>
+                        <a href="#">COMMUNITY</a>
+                    </li>
+                    <li>
+                        <a href="#">MY PAGE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="subMain">
+        <section id="title">
+            <h2 class="hidden">title</h2>
+            <div id="titleWrap">
+                <dl>
+                    <dt>매장 추천 리스트</dt>
+                    <dd id="now">2024 올해의 맛집을 소개합니다.<br>
+                        이외에도 다양한 매장들이 지속적으로 업데이트 될 예정입니다.</dd>
+                    <dd>
+                        <input type="text" placeholder="#창원&nbsp;맛집검색">
+                        <a href="#" class="hideText">searchIcon</a>
+                    </dd>
+                </dl>
+                <div id="searchTyp">
+                    <div>
+                        <a href="#">창원</a>
+                        <a href="#" class="xx">X</a>
+                    </div>
+                    <div>
+                        <a href="#">와이파이</a>
+                        <a href="#" class="xx">X</a>
+                    </div>
+                    <div>
+                        <a href="#">한식</a>
+                        <a href="#" class="xx">X</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="filter">
+            <h2 class="hidden">filter</h2>
+            <div class="filterLineContainer">
+                <ul class="filterWrap">
+                    <li class="filterLine1">
+                        <a href="#" id="filter1">창원</a>
+                        <a href="#" id="filter2">강원도</a>
+                        <a href="#" id="filter3">서울</a>
+                        <a href="#" id="filter4">경기도</a>
+                        <a href="#" id="filter5">인천</a>
+                        <a href="#" id="filter6">대전</a>
+                    </li>
+                    <li class="filterLine2">
+                        <a href="#" id="filter8">제주도</a>
+                        <a href="#" id="filter9">성주</a>
+                        <a href="#" id="filter10">의정부</a>
+                        <a href="#" id="filter11">대구</a>
+                        <a href="#" id="filter12">강남</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="filterText">
+                <p>기본순</p>
+                <p>별점순</p>
+            </div>
+            <ul class="gridContainer">
+                <li class="gridItem">
+                    <a href="#;" class="good">좋아요</a>
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                            <dd>운서넙디점</dd>
+                            <dd>주소<span>인천광역시 중구 넙디로 26</span></dd>
+                            <dd>전화번호<span>032-746-3804</span></dd>
+                            <dd>운영시간<span>11:00 ~ 21:00</span></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;" class="good">좋아요</a>
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                            <dd>운서넙디점</dd>
+                            <dd>주소<span>인천광역시 중구 넙디로 26</span></dd>
+                            <dd>전화번호<span>032-746-3804</span></dd>
+                            <dd>운영시간<span>11:00 ~ 21:00</span></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;" class="good">좋아요</a>
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                            <dd>운서넙디점</dd>
+                            <dd>주소<span>인천광역시 중구 넙디로 26</span></dd>
+                            <dd>전화번호<span>032-746-3804</span></dd>
+                            <dd>운영시간<span>11:00 ~ 21:00</span></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;" class="good">좋아요</a>
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                            <dd>운서넙디점</dd>
+                            <dd>주소<span>인천광역시 중구 넙디로 26</span></dd>
+                            <dd>전화번호<span>032-746-3804</span></dd>
+                            <dd>운영시간<span>11:00 ~ 21:00</span></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;" class="good">좋아요</a>
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                            <dd>운서넙디점</dd>
+                            <dd>주소<span>인천광역시 중구 넙디로 26</span></dd>
+                            <dd>전화번호<span>032-746-3804</span></dd>
+                            <dd>운영시간<span>11:00 ~ 21:00</span></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;" class="good">좋아요</a>
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                            <dd>운서넙디점</dd>
+                            <dd>주소<span>인천광역시 중구 넙디로 26</span></dd>
+                            <dd>전화번호<span>032-746-3804</span></dd>
+                            <dd>운영시간<span>11:00 ~ 21:00</span></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="gridItem">
+                    <a href="#;">
+                        <dl>
+                            <dt>#맛집#최고</dt>
+                            <dd>옆집 창수씨
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star1.png" alt="별">
+                                <img src="image/sub_aside/star2.png" alt="별">
+                                <span>4.5</span>
+                            </dd>
+                            <dd>TEL<span>053-123-4567</span></dd>
+                            <dd>ADRESS<span>대구광역시 북구 그린빌</span></dd>
+                            <dd>햄버거는 샌드위치 패스트 푸드의 일종인 음식이다. 또한 햄버거는 양념,
+                                빵가루 등에 고기를 갈아 넣고 버무린 뒤 구워낸 햄버그 스테이크, 채소,
+                                양념 등을 두 장 이상의 동그란 빵 사이에 넣어 만들며, 보통 손으로 쥐면서 들고 먹는다.
+                            </dd>
+                            <dd>좋아요</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+            <div id="filterMore">
+                <a href="#">더보기</a>
+            </div>
+        </section>
+        <div id="filterMain">
+            <div id="filterSub">
+                <div id="subImage">이미지</div>
+                <div id="subTitle">
+                    <dl>
+                        <dt>코지하우스</dt>
+                        <dd>창원역 | 피자, 스파게티</dd>
+                        <dd>
+                            <img src="./image/main/Vector.png" alt="별">
+                            <img src="./image/main/Vector.png" alt="별">
+                            <img src="./image/main/Vector.png" alt="별">
+                            <img src="./image/main/Vector.png" alt="별">
+                            <img src="./image/main/Vector.png" alt="별">
+                            <span>5.0&nbsp;(98명의 평가)</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>매장소개</dt>
+                        <dd>코지하우스는 호주에서 흔히 볼 수 있는 길거리 레스토랑에서 판매하는 10불 스테이크를 모티브로 하였습니다.
+                            호주의 캐쥬얼 레스토랑의 맛과 분위기를 살린 코지하우스는 기존의 격식있는 이탈리안레스토랑보다 가볍고 편안하게 즐길 수 있습니다.
+                        </dd>
+                    </dl>
+                    <div id="noticeWrap">
+                        <div id="notice">
+                            <dl class="noticeContents">
+                                <dt class="hidden">가게정보</dt>
+                                <dd>영업시간</dd>
+                                <dd>주차</dd>
+                                <dd>주소</dd>
+                                <dd>전화번호</dd>
+                            </dl>
+                            <dl class="noticeContainer">
+                                <dt class="hidden">가게정보설명</dt>
+                                <dd>매일 8:00 ~ 22:00</dd>
+                                <dd>주차, 발벳</dd>
+                                <dd>서울특별시 강남구 도산대로 101길 6</dd>
+                                <dd>02-456-6987</dd>
+                            </dl>
+                        </div>
+                        <ul class="subNotice">
+                            <li>메뉴</li>
+                            <li>
+                                <ul>
+                                    <li>치즈 피자</li>
+                                    <li>하와이안 피자</li>
+                                    <li>페퍼로니 피자</li>
+                                    <li>불고기 피자</li>
+                                    <!-- <li>고구마피자</li> -->
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>9,000 원</li>
+                                    <li>10,000 원</li>
+                                    <li>12,000 원</li>
+                                    <li>16,000 원</li>
+                                    <!-- <li>15,000 원</li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li id="leftRight"><a href="#">좌우</a></li>
+                        </ul>
+                        <p>open</p>
+                    </div>
+                    <div id="subNav">
+                        <div><a href="#">길찾기</a></div>
+                    </div>
+                    <a href="#;">
+                        <div class="x">창 닫는 버튼</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside id="userInfo">
+        <h2 class="hidden">userInfo</h2>
+        <ul id="userWrap">
+            <li id="userTitle">
+                <dl>
+                    <dt class="hideText">userImg</dt>
+                    <dd>꿀꿀이 밥줘</dd>
+                    <dd>
+                        다음 회원까지<br>
+                        3번 더 주문 시 레벨업!
+                    </dd>
+                </dl>
+            </li>
+            <li id="userDInfo">
+                <dl>
+                    <dt>회원정보</dt>
+                    <dd>닉네임<span>꿀꿀이밥줘</span></dd>
+                    <dd>대표 이메일<span>catgkdntm@naver.com</span></dd>
+                    <dd>휴대폰 번호 변경<span>010 8556 7052</span></dd>
+                    <dd>로그인 기기 관리<span>NAVER</span></dd>
+                </dl>
+            </li>
+            <li id="userSave">
+                <div id="save">
+                    <a href="#" id="wishlist">나의 찜&nbsp;&nbsp;></a>
+                    <a href="#" id="history">주문내역&nbsp;&nbsp;></a>
+                </div>
+                <div id="userReview">
+                    <dl>
+                        <dt>MY 리뷰</dt>
+                        <dd class="hideText" id="userImg">이미지</dd>
+                        <div id="reviewSet">
+                            <dd>꿀꿀이 밥줘</dd>
+                            <dd>
+                                <div class="starRating">
+                                    <input type="radio" class="star" value="1">
+                                    <input type="radio" class="star" value="2">
+                                    <input type="radio" class="star" value="3">
+                                    <input type="radio" class="star" value="4">
+                                    <input type="radio" class="star" value="5">
+                                </div>
+                            </dd>
+                            <dd>여기여기 진짜 요물이에요ㅠㅠ</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div>
+
+                    <div id="btnWrap">
+                        <div>
+                            <div>
+                                <a href="#">쿠폰</a>
+                                <a href="#">요즘여기</a>
+                                <a href="#">미션</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="asideMenu">
+                    <div id="couponWrap">
+                        <div>
+                            <a href="#">쿠폰 등록하기</a>
+                        </div>
+                        <div class="coupon-item">
+                            <dl class="coupon-item-content content">
+                                <dt>20,000원</dt>
+                                <dd>[와쿠와쿠] 즐겨찾기 할인 쿠폰</dd>
+                                <dd>[와쿠와쿠] 즐겨찾기 할인 쿠폰<br>
+                                    150,000원 이상 구매시 사용가능<br>
+                                    2024-05-30 12:42까지
+                                </dd>
+                                <dd class="move" id="move1"><a href="#">이동하기</a></dd>
+                            </dl>
+                        </div>
+                        <div class="coupon-item">
+                            <dl class="coupon-item-content content">
+                                <dt>30%</dt>
+                                <dd>[브랜드 히든쿠폰]무조건 30% 쿠폰</dd>
+                                <dd>[브랜드 히든쿠폰]무조건 30% 쿠폰<br>
+                                    모든 제품 구매시 사용가능<br>
+                                    2024-05-30 12:42까지
+                                </dd>
+                                <dd class="move" id="move2"><a href="#">이동하기</a></dd>
+                            </dl>
+                        </div>
+                        <div class="coupon-item">
+                            <dl class="coupon-item-content">
+                                <dt>10,000원</dt>
+                                <dd>[와쿠와쿠] 할인 쿠폰</dd>
+                                <dd>[와쿠와쿠] 할인 쿠폰<br>
+                                    75,000원 이상 구매시 사용가능<br>
+                                    2024-05-30 12:42까지
+                                </dd>
+                                <dd class="move" id="move3"><a href="#">이동하기</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div id="misson">
+                        <dl>
+                            <dt>꿀꿀이 밥줘</dt>
+                            <dd>진행 중 미션 <span>6</span>개 | 완료한 미션 <span>0</span>개</dd>
+                            <dd>이미지</dd>
+                        </dl>
+                    </div>
+                    <div id="score">
+                        <ul>
+                            <li>5월 미션 결과를 확인하세요!
+                                <ul>
+                                    <li>미션 결과 보기 ></li>
+                                    <li>이미지</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="region">
+                        <dl>
+                            <dt>자연&지역명소 리뷰 쓰기</dt>
+                            <dd>산, 공원, 해변, 유적지 등에서 리뷰 3번 쓰면 완료!</dd>
+                            <dl>
+                                <dd>도장 이미지</dd>
+                                <dd>이미지</dd>
+                                <dd>이미지</dd>
+                            </dl>
+                        </dl>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="#" id="userCloseBtn">X</a>
+    </aside>
+    <aside id="bottomSide">
+        <h2 class="hidden">chat</h2>
+        <div class="openChatWrap">
+            <div id="openChatContents">
+                <ul>
+                    <li>logo</li>
+                    <li>간편한 채팅상담 채널톡 !</li>
+                </ul>
+                <div id="moon">
+                    <div>
+                        <dl>
+                            <dt>옆집 창수씨</dt>
+                            <dd>안녕하세요.<br>대한민국 명실상부 No.1 맛집 가이드북 와쿠와쿠 입니다.
+                                <br>무엇을 도와드릴까요?<br>신속하고 빠르게 도와드리겠습니다.
+                            </dd>
+                        </dl>
+                        <div id="newWrap">
+                            <div id="new"><a href="#">새 문의하기</a></div>
+                            <div id="bottomArrow">문의하기 화살표</div>
+                        </div>
+                        <p>· 답변이 지연될 수 있습니다.</p>
+                    </div>
+                </div>
+                <div id="next">
+                    <div>
+                        <p><a href="#">다른 방법으로 상담하기</a></p>
+                        <ul>
+                            <li><a href="#">카카오톡</a></li>
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">더보기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="chatHome">
+                    <ul>
+                        <li id="chatingButton"><a href="#;">
+                                <img src="./image/main/chat.png" alt="대화">
+                                <span>대화</span>
+                            </a>
+                        </li>
+                        <li><a href="#;">
+                                <img src="./image/main/home(1).png" alt="홈버튼">
+                                <span>홈</span>
+                            </a>
+                        </li>
+                        <li id="settingButton"><a href="#;">
+                                <img src="./image/main/setting.png" alt="설정">
+                                <span>설정</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="chating">
+                <div>
+                    <a href="#;" id="back">뒤로가기</a>
+                    <div>탑로고</div>
+                    <dl>
+                        <dt>와쿠와쿠</dt>
+                        <dd>오전 10:00부터 운영해요</dd>
+                    </dl>
+                </div>
+                <div class="center">
+                    <div>센터로고</div>
+                    <p>와쿠와쿠에 문의하기</p>
+                    <p>오전 9:00</p>
+                </div>
+                <div id="aaaa">
+                    <div class="operate">
+                        <div id="operateLogo">로고</div>
+                        <p>안녕하세요.<br>
+                        대한민국 명실상부 No.1 맛집 가이드북<br>와쿠와쿠 입니다.
+                        소중한 시간을 내어 문의주신 식도락메이트 님께<br>
+                        최선을 다해 안내드리겠습니다.<br>
+                        [고객센터 운영시간]<br>
+                        ! 채널톡 상담 : 10:00 ~ 18:00(공휴일/주말제외)<br>
+                        ! 점심시간 : 13:00 ~ 14:00</p>
+                    </div>
+                </div>
+                <ul class="chatMoon">
+                    <li>
+                       <a href="#">리뷰를 삭제하고 싶어요!</a>
+                    </li>
+                    <li id="event">
+                        <a href="#">이벤트 유효기간이 지났는데 사용 가능할까요?</a>
+                    </li>
+                    <li>
+                        <a href="#">직접적인 문의는 못하나요?</a>
+                    </li>
+                    <li>
+                        <a href="#">포인트로 뭘 할 수 있나요?</a>
+                    </li>
+                    <li>
+                        <a href="#">가게정보가 틀렸어요</a>
+                    </li>
+                </ul>
+                <div id="dsa">
+                    <div id="dsaLogo">로고</div>
+                    <p>안녕하세요. 고객님.<br>
+                    문의해주셔서 감사합니다. 안타깝게도,<br>
+                    유효기간이 지난 상품권은 사용이<br>불가능합니다.<br>
+                    하지만, 고객님의 상황을 도와드리기 위해<br>
+                    다른 방법을 찾아보겠습니다.<br>
+                    혹시 다른 문의사항이 있으시면 언제든지<br>
+                    말씀해 주세요. 최대한 빠르게 도와드리겠<br>습니다.
+                    감사합니다.</p>
+                </div>
+            </div>
+            <div id="setting">
+                <div>
+                    <p>설정</p>
+                    <div>
+                        <div id="settingLogo">로고</div>
+                        <p>꿀꿀이 밥줘</p>
+                        <p>010-8556-7052</p>
+                        <p>catgkdntm@naver.com</p>
+                        <div id="settingImage">
+                            <a href="#">
+                                <p>수정하기</p>
+                                <div>이미지</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="settingBtn">
+                    <p>상담환경</p>
+                    <ul>
+                        <li>언어
+                            <ul>
+                                <li>한국어
+                                    <img src="./image/main/rightButton.png" alt="오른쪽버튼">
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>메시지 변역표시</span>
+                            <div class="toggle">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <span>알림음</span>
+                            <div class="toggle">
+                                <input type="checkbox" id="checkOne">
+                                <label for="checkOne">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="settingSubBtn">
+                    <p>광고 수신 설정</p>
+                    <ul>
+                        <li>
+                            <span>문자 수신거부</span>
+                            <div class="toggle">
+                                <input type="checkbox" id="checkTwo">
+                                <label for="checkTwo">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <span>이메일 수신거부</span>
+                            <div class="toggle">
+                                <input type="checkbox" id="checkThree">
+                                <label for="checkThree">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <p id="vv">v.01.1</p>
+                </div>
+                <div id="chatHomeWrap">
+                    <ul>
+                        <li id="chatingButtonWrap"><a href="#;">
+                                <img src="./image/main/chat.png" alt="대화">
+                                <span>대화</span>
+                            </a>
+                        </li>
+                        <li id="homeCome"><a href="#;">
+                                <img src="./image/main/home(1).png" alt="홈버튼">
+                                <span>홈</span>
+                            </a>
+                        </li>
+                        <li id="settingButtonWrap"><a href="#;">
+                                <img src="./image/main/setting.png" alt="설정">
+                                <span>설정</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="ccc">
+            <a href="#;">
+                <ul>
+                    <li id="openChat">C</li>
+                </ul>
+            </a>
+            <a href="#" id="scrollTop">
+                <ul>
+                    <li id="bottomButton">탑버튼</li>
+                </ul>
+            </a>
+        </div>
+    </aside>
+    <footer id="footer">
+        <h2 class="hidden">footer</h2>
+        <div>
+            <a href="#">회사 소개&nbsp;|</a>
+            <a href="#">서비스 소개&nbsp;|</a>
+            <a href="#">광고 및 제휴&nbsp;|</a>
+            <a href="#">와쿠와쿠&nbsp;|</a>
+            <a href="#">개인정보처리방침&nbsp;|</a>
+            <a href="#">이용약관&nbsp;|</a>
+            <a href="#">도움말&nbsp;|</a>
+            <a href="#">공지사항&nbsp;|</a>
+            <a href="#">채용정보</a>
+        </div>
+        <p> (주)와쿠와쿠 | 대표이사: 정민경 | 이사장: 이지현 | 회장: 이창수</p>
+        <address> 사업자등록번호: 010-8556-7052 | TEL 010-2416-9104 | FAX 010-6326-7993 | EMAIL catgkdntm@naver.com</address>
+        <ul class="sns">
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">X</a></li>
+        </ul>
+    </footer>
+    <script src="jsc/openChat.js"></script>
+    <script src="./jsc/navHover.js"></script>
+    <script src="./jsc/nav.js"></script>
+    <script src="./jsc/myPage.js"></script>
+    <script src="./jsc/bottomButton.js"></script>
+    <script src="./jsc/subFilter.js"></script>
+    <script src="./jsc/subFilterContents.js"></script>
+</body>
+</html>
